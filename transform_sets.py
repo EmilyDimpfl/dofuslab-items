@@ -80,7 +80,7 @@ def transform_sets(dofusdude_data, dofuslab_sets_json, skip: bool = True, replac
             logger.info(f"Skipping: {dset["name"]}")
             continue
 
-        logger.info(f"Transforming: {dset["name"]}")
+        logger.debug(f"Transforming: {dset["name"]}")
         logger.debug(f"Set data: {dset}")
 
         if replace and item_exists(dset["name"], dofuslab_sets_json):
